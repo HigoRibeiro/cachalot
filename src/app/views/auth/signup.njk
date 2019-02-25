@@ -1,0 +1,32 @@
+{% extends "_layouts/auth.njk" %}
+
+{% block body %}
+  <div class="auth-content">
+    <div class="container">
+      <h2>Create your account</h2>
+      <div class="field-wrapper bordered">
+        <div class="field">
+          <div class="icon"></div>
+          <input type="email" name="email" id="email" placeholder="email">
+        </div>
+      </div>
+      <div class="field-wrapper bordered">
+        <div class="field">
+          <div class="icon"></div>
+          <input type="text" name="username" id="username" placeholder="username">
+        </div>
+      </div>
+      <div class="field-wrapper bordered">
+        <div class="icon"></div>
+        <div class="field">
+          <input type="text" name="password" id="password" placeholder="your password">
+        </div>
+      </div>
+      <div class="field-wrapper">
+        <div class="field">
+          <button>Log In</button>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}
